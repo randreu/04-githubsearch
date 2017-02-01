@@ -5,14 +5,14 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class GithubService{
   private username:string;
-  private client_id = '7c5c2d57111ac2daa982';
-  private client_secret = '1fe77c3996135ed272c82370612071e62c50318b';
+  private client_id = 'd9308aacf8b204d361fd';
+  private client_secret = '62551cc02cee983fff0bac41baf170eb5a312c1c';
   //private host = 'https://api.github.com';
   private host = 'http://localhost:3001';
 
   constructor(private _http: Http){
     console.log('Gihub Service Ready...');
-    this.username = 'randreu'
+    this.username = 'bradtraversy'
   }
 
   getUser(){
